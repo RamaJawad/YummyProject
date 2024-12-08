@@ -1,0 +1,274 @@
+:root {
+    --bulma-link-h: 10deg;
+    --bulma-family-primary: Sour Gummy;
+  }
+ 
+  
+
+  html{
+    font-size: 16px;
+  }
+body{
+  font-family: "Roboto", sans-serif;
+  
+}  
+.fon_shadwos{
+  font-family: "Shadows Into Light", cursive;
+  
+
+}
+.block_div{
+  display: block;
+}
+.border_gray{
+border: 20px solid gray ;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+
+}
+.moving-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.image {
+  width: 100%;
+  height: 22rem; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:2rem ;
+  font-size: bold;
+  color: white; /* لون النص */
+  background: rgba(0, 0, 0, 0.5); /* خلفية شبه شفافة لتسهيل قراءة النص */
+}
+
+.level {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.level-item {
+  text-align: center;
+}
+.meals{
+  border-bottom: 2px solid gray;
+}
+.bord-left{
+  border-left: 3px solid red;
+}
+#map {
+  height: 500px;
+  width: 100%;
+}
+.border-footer{
+  border-bottom: 2px solid gray;
+}
+.pos{
+  position: relative;
+}
+.arrow{
+  position: absolute;
+  right: 3rem;
+  top: 70%
+}
+.bord-card{
+  border: 1px solid rgb(211, 209, 209);
+} 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.moving-image {
+  animation: moveUpDown 2s infinite;
+}
+.dot {
+  position: relative;
+  top: 10px; 
+  left: 0px;
+   
+}
+.centered-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+.circular-image {
+  width: 150px;
+  height: 150px; 
+  border-radius: 50%;  
+  object-fit: cover;  
+}
+
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px; */
+}
+
+/* swiper-slide {
+  background-position: center;
+  background-size: 100vw;
+} */
+
+
+swiper-container {
+      width: 100%;
+      height: 150%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      top: 40%;
+      text-align: left;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ffffff40;
+    }
+    .bord-price{
+      border-bottom: 2px solid red;
+    }
+
+[data-countup] {
+  font-size: 3rem;
+  font-family:impact;
+}
+.hidden {
+    display: none;
+  }
+.hover_bord_food:hover{
+  border-bottom: 2px solid red;
+}
+.hover_bord_red:hover{
+  border-bottom: 2px solid red;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-icons {
+  position: absolute;
+  top: -10px;  /* تعديل الموضع حسب الحاجة */
+  right: 10px; /* تعديل الموضع حسب الحاجة */
+  display: flex;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+   
+
+.imag_hover:hover {
+  transform: translateY(-60px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-icons {
+  position: absolute;
+  top: 10px;  
+  right: 35px;
+  display: flex;
+  flex-direction: column; /* جعل الأيقونات تظهر تحت بعض */
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* إخفاء الأيقونات بالافتراضي */
+}
+
+.image-container:hover .dropdown-icons {
+  opacity: 1; /* إظهار الأيقونات عند التمرير */
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+/* nav{
+  background: rgba(255, 255, 255, 0.022); 
+  backdrop-filter: blur(30px); 
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+
+} */
+
+.overlay {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; 
+  z-index: 10; 
+}
+
+.heading, .title {
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+

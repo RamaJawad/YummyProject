@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../javascript/file.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <!-- inclde font roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- inculde font Shadows Into Light  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- include aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- add AOS CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" /> -->
+  <!-- add swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!--  start navbar  -->
+
+  <div class="container ">
+    <nav class="navbar is-fixed-top pl-6 pr-6" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item " href="https://googel.com">
+          <span class="is-size-3 has-text-weight-bold"> yummy</span>
+          <span class="has-text-weight-bold has-text-danger is-size-3 dot">.</span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+
+        <a class="navbar-item hover_bord_red ">
+            Home
+          </a>
+
+          <a class="navbar-item hover_bord_red">
+            About
+          </a>
+          <a class="navbar-item hover_bord_red">
+            Menue
+          </a>
+          <a class="navbar-item hover_bord_red">
+            Event
+          </a>
+          <a class="navbar-item hover_bord_red">
+            Chefs
+          </a>
+          <a class="navbar-item hover_bord_red">
+            Gallery
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Dropdwon
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item is-selected">
+                Jobs
+              </a>
+
+
+              <a class="navbar-item">
+                Contact
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Dropdwon
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    item1
+                  </a>
+                  <a class="navbar-item is-selected">
+                    item2
+                  </a>
+
+
+                  <a class="navbar-item">
+                    item3
+                  </a>
+
+                  <hr class="navbar-divider">
+                  <a class="navbar-item">
+                    Report an issue
+                  </a>
+                </div>
+              </div>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item">
+            Contact
+          </a>
+
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-danger  is-rounded has-text-white">
+                <strong> Book a Table</strong>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--end navbar  -->
+
+
+  <!-- star section hero Home-->
+
+  <section class="hero is-large has-background-white-ter mt-6 p-6" data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="1500" >
+    <div class="columns is-vcentered has-text-centered">
+      <div class="column is-half">
+        <h1 class="is-size-1 fon_shadwos has-text-weight-bold">
+          ENJOY YOUR HEALTHY DELICIOUS FOOD
+        </h1>
+        <p class="is-size-4">
+          we are team of talented designers <br /> making website with bulma
+        </p>
+        <div class="buttons is-centered m-2">
+          <a class="button is-danger is-rounded has-text-white">
+            <strong> Book a Table</strong>
+          </a>
+          <a class="button is-white">
+            <span class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </span>
+            <strong> watch video</strong>
+          </a>
+        </div>
+      </div>
+      <div class="column">
+        <img class="moving-image" src="../img/hero-img.png" alt="food_hero" width="500px" height="500px" />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end section hero Home  -->
+
+
+
+  <!--  start section learn more about as -->
+  <br>
+  <div class="container">
+    <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1510"> about as</p>
+    <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+      data-aos-easing="linear" data-aos-duration="1515">LEARN MORE
+      <span class="has-text-danger">ABOUT AS</span>
+    </h3>
+    <div class="fixed-grid m-1">
+      <div class="grid">
+        <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="../img/about-2.jpg" alt="about-as">
+        </div>
+        <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1510">
+          <p class="is-italic has-text-grey-light">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Modi id voluptates ex amet repudiandae, assumenda
+            temporibus culpa at suscipit voluptatem ipsam deserunt
+            inventore doloribus consequuntur harum perferendis, consequatur,
+            nesciunt in. </p> <span class="icon-text"> <span class="icon">
+
+            </span> <span class="m-3 has-text-weight-bold">
+              <i class="fa-solid fa-check has-text-danger is-size-4"> </i>
+              Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Modi id voluptates ex amet repudiandae, </span> </span> <span class="icon-text">
+            <span class="icon"> </span>
+            <span class="m-3 has-text-weight-bold">
+              <i class="fa-solid fa-check has-text-danger is-size-4"> </i>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi id voluptates ex amet repudiandae, </span>
+          </span> <span class="icon-text">
+            <span class="icon"> </span>
+            <span class="m-3 has-text-weight-bold ">
+              <i class="fa-solid fa-check has-text-danger is-size-4">
+              </i>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Modi id voluptates ex amet repudiandae,
+            </span>
+          </span>
+          <p class="is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit assumenda nam sequi
+            suscipit? Enim libero minus numquam delectus maiores! Quod harum illo minus voluptatum accusamus debitis
+            incidunt qui ut?</p>
+        </div>
+        <div class="cell border_gray mt-6" style="width: 500px; height: 150px;">
+          <p class="has-text-grey-darker has-text-weight-bold is-size-4 has-text-centered"> Book a table </p>
+          <br>
+          <p class="has-text-danger has-text-weight-bold is-size-4 has-text-centered"> +1 5589 55488 55</p>
+        </div>
+        <div class="cell has-text-centered">
+          <iframe width="500px" height="300px" src="https://www.youtube.com/embed/GzK5QH-adR8"
+            title="وصفات طبخ سهلة وسريعة خفيفة رائعة المذاق" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <!--  end section learn more about as -->
+
+  <!-- start section four card whay choose yummy  -->
+
+  <section class="has-background-grey-lighter ">
+    <div class="container ">
+      <div class="columns ">
+        <div class="column has-background-danger is-one-third" data-aos="fade-down" data-aos-easing="linear"
+          data-aos-duration="1500">
+          <p class="is-size-2  has-text-weight-bold  has-text-white p-3">
+            why choose yummy</p>
+          <p class=" has-text-white p-3 is-size-5">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Expedita veritatis delectus
+            dignissimos voluptatibus ratione id dolorem itaque
+            quod ullam perferendis, aspernatur
+            rerum sequi impedit natus obcaecati quia quas non commodi.</p>
+          <br>
+          <br>
+
+          <div class="buttons is-centered m-2 ">
+            <a class="button is-hovered  is-rounded has-text-black   has-background-grey-light">
+              <strong>learn more</strong>
+            </a>
+
+          </div>
+        </div>
+        <div class="column  has-background-white-ter  has-text-centered ml-3 mr-3 pt-6 " style="gap: 20px"
+          data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1490">
+          <span class="icon">
+            <i class="fa-solid fa-calendar-days has-text-danger is-size-3 has-text-centered"></i>
+          </span>
+          <p class="is-size-3 has-text-centered has-text-weight-bold ">corpise vlouptates offica eismud</p>
+
+          <p class="is-size-5 has-text-centered"> consectetur adipisicing elit Similique qui eos excepturi tempore quis
+            nemo, quam voluptas expedi</p>
+
+
+        </div>
+        <div class="column has-background-white-ter is-vcentered has-text-centered pt-6 ml-3 mr-3 " style="gap: 20px"
+          data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+          <span class="icon centered-icon ">
+            <i class="fa-solid fa-gem has-text-danger is-size-2 "></i>
+          </span>
+          <p class="is-size-3 has-text-centered has-text-weight-bold">lapro consectetur incidid dolore </p>
+
+          <p class="is-size-5 has-text-centered"> consectetur adipisicing elit Similique qui eos excepturi tempore quis
+            nemo, quam voluptas expedi</p>
+
+
+        </div>
+
+        <div class="column has-background-white-ter is-vcentered ml-3 mr-3  pt-6 has-text-centered" data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="1540">
+          <span class="icon">
+            <i class="fa-solid fa-vial-virus has-text-danger is-size-3 "></i>
+          </span>
+          <p class="is-size-3 has-text-centered  has-text-weight-bold">ULmaco laboris lador lore pan</p>
+
+          <p class="is-size-5 has-text-centered"> consectetur adipisicing elit Similique qui eos excepturi tempore quis
+            nemo, quam voluptas expedi</p>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <!-- end section four card whay choose yummy  -->
+
+  <!-- star section count -->
+  <!-- <section>
+    <div class="image-container">
+      <img src="../img/stats-bg.jpg" alt="count_" class="image">
+      <div class="overlay">
+        <div class="level ">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">39</p>
+              <p class="title">client</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading"> 89 </p>
+              <p class="title"> Project</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">247 </p>
+              <p class="title"> Hours Of support</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading is-2">5</p>
+              <p class="has-text-grey-light ">Worker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  -->
+
+  <section>
+    <div class="image-container">
+      <img src="../img/stats-bg.jpg" alt="count_" class="image" >
+      
+  
+      <div class="overlay">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <div data-countup>
+              <p class="heading" id="client">39</p>
+              <span class=" count-name title overlay has-text-black">client</span>
+            
+            </div>
+          </div>
+         
+
+          <div class="level-item has-text-centered">
+
+            <div data-countup>
+              <p class="heading" id="project">80</p>
+              
+            </div> 
+
+          
+          </div>
+          <!-- <div class="has-text-centered">
+            <br>
+            <br>
+          <p class="title" >Project</p>
+        </div> -->
+          <div class="level-item has-text-centered">
+            <div data-countup>
+              <p class="heading" id="support">24</p>
+              <p class="title ">Hours Of support</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div data-countup>
+              <p class="heading is-2" id="worker" data-countup>8</p>
+              <p class="has-text-grey-light">Worker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <script>
+        function countup(el, target) {
+          let data = { count: 0 };
+          anime({
+            targets: data,
+            count: [0, target],
+            duration: 6000,
+            round: 1,
+            delay: 200,
+            easing: 'easeOutCubic',
+            update() {
+              el.innerText = data.count.toLocaleString();
+            }
+          });
+        }
+
+        function makeCountup(el) {
+          const text = el.textContent;
+          const target = parseInt(text, 10);
+
+          const io = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.intersectionRatio > 0) {
+                countup(el, target);
+                io.unobserve(entry.target);
+              }
+            });
+          });
+
+          io.observe(el);
+        }
+
+        const els = document.querySelectorAll('[data-countup]');
+
+        els.forEach(makeCountup);
+      </script>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- end section count -->
+  <!-- star section yummy menu -->
+  <p class="has-text-centered m-2 p-4 has-text-weight-bold"> our menu</p>
+  <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold ">CHECK OUR <span
+      class="has-text-danger">YUMMY MENU</span></h3>
+  <div class="has-text-centered is-size-4 p-4  is-full-desktop  is-half-tablet is-one-third-mobile" 
+  data-aos="fade-down" 
+  data-aos-easing="linear" 
+  data-aos-duration="1500">
+    <div class="container">
+      <span class="meals hover_bord_food">Starters</span>&nbsp;&nbsp;&nbsp;
+      <span class="meals mr-4 hover_bord_food">breakfast</span>
+      <span class="meals mr-4 hover_bord_food">lunch</span>
+      <span class="meals mr-4 hover_bord_food">Dinner</span>
+    </div>
+    <p class="has-text-centered m-2 p-4 has-text-weight-bold"> menu</p>
+    <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold has-text-danger">Staters</h3>
+    <!-- using grid for meals 1-starters -->
+    <div class="fixed-grid has-3-cols is-one-third-mobile" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="grid">
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-1.png" alt="1" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Magnam Tiste</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-2.png" alt="2" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Aut luia</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-3.png" alt="3" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Est Eligendi</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-4.png" alt="4" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Eos luibusdam</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-5.png" alt="5" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Eos luibusdam</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+        <div class="cell has-text-centered">
+          <img class="menu-item" src="../img/menu/menu-item-6.png" alt="6" width="200px">
+          <p class="is-size-4 has-text-centered menu-text">Laboriosam Direva</p>
+          <p class="is-size-6 has-text-centered has-text-grey-light menu-text">Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="is-size-5 has-text-centered has-text-danger menu-text">$5.95</p>
+        </div>
+      </div>
+    </div>
+    <script>
+       
+      const spans = document.querySelectorAll('.meals');
+
+      const images = document.querySelectorAll('.menu-item');
+      const texts = document.querySelectorAll('.menu-text');
+
+
+      spans.forEach(span => {
+        span.addEventListener('click', () => {
+          images.forEach(img => {
+            img.classList.add('hidden');
+          });
+          texts.forEach(text => {
+            text.classList.add('hidden');
+          });
+
+          setTimeout(() => {
+            images.forEach(img => {
+              img.classList.remove('hidden');
+            });
+            texts.forEach(text => {
+              text.classList.remove('hidden');
+            });
+          }, 1000); // إخفاء العناصر لمدة 1 ثانية ثم إعادة ظهورها
+        });
+      });
+    </script>
+
+
+
+    <!-- end section yummy menu -->
+
+
+
+
+
+    <!--start slider swiper -->
+    <section>
+      <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
+        cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+        <swiper-slide>
+          <!-- star section what are they saying about as -->
+          <section class="has-background-white-ter">
+            <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+              data-aos-duration="1500"> TESTIMONIALS</p>
+            <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500">
+              WHAT ARE THEY <span class="has-text-danger">SAYING ABOUT US</span></h3>
+
+            <div class="grid has-text-centered ml-8 pl-6">
+              <div class="cell is-vcentered bord-left" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <p class="is-italic has-text-black-light is-size-4">
+                  <span class="has-text-danger is-size-3"> “ </span> consectetur adipisicing elit
+                  Nostrum culpa impedit ratione excepturi inventore adipisci obcaecati,
+                  ducimus Voluptatem quae adipisci necessitatibus non aliquid dolor
+                  accusamus <span class="has-text-danger is is-size-3">” </span>
+                </p>
+                <p class="has-text-grey-light is-size-4 fon_shadwos">SAUL GOODMAN</p>
+                <p class="has-text-grey-light is-size-5 fon_shadwos">CEO && FOUNDER</p>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+              </div>
+              <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img class="is-rounded circular-image" src="../img/testimonials/testimonials-1.jpg" alt="person">
+              </div>
+            </div>
+
+          </section>
+          <!-- end section what are they saying about as -->
+        </swiper-slide>
+        <swiper-slide>
+          <section class="has-background-white-ter">
+            <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+              data-aos-duration="1500"> TESTIMONIALS</p>
+            <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500">
+              WHAT ARE THEY <span class="has-text-danger">SAYING ABOUT US</span></h3>
+
+            <div class="grid has-text-centered ml-6 pl-6">
+              <div class="cell is-vcentered bord-left" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <p class="is-italic has-text-black-light is-size-4">
+                  <span class="has-text-danger is-size-3"> “ </span> consectetur adipisicing elit
+                  Nostrum culpa impedit ratione excepturi inventore adipisci obcaecati,
+                  ducimus Voluptatem quae adipisci necessitatibus non aliquid dolor
+                  accusamus <span class="has-text-danger is is-size-3">” </span>
+                </p>
+                <p class="has-text-grey-light is-size-4 fon_shadwos">SAUL GOODMAN</p>
+                <p class="has-text-grey-light is-size-5 fon_shadwos">CEO && FOUNDER</p>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+
+              </div>
+              <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img class="is-rounded circular-image" src="../img/testimonials/testimonials-3.jpg" alt="person">
+              </div>
+            </div>
+
+          </section>
+        </swiper-slide>
+        <swiper-slide>
+          <section class="has-background-white-ter">
+            <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+              data-aos-duration="1500"> TESTIMONIALS</p>
+            <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500">
+              WHAT ARE THEY <span class="has-text-danger">SAYING ABOUT US</span></h3>
+
+            <div class="grid has-text-centered ml-6 pl-6">
+              <div class="cell  bord-left" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <p class="is-italic has-text-black-light is-size-4">
+                  <span class="has-text-danger is-size-3">“</span>
+                  consectetur adipisicing elit Nostrum culpa impedit ratione excepturi inventore adipisci obcaecati,
+                  ducimus Voluptatem quae adipisci necessitatibus non aliquid dolor accusamus
+                  <span class="has-text-danger is-size-3">”</span>
+                </p>
+                <p class="has-text-grey-light is-size-4 fon_shadwos">SAUL GOODMAN</p>
+                <p class="has-text-grey-light is-size-5 fon_shadwos">CEO && FOUNDER</p>
+                <i class="fa-solid fa-star has-text-warning"></i>
+
+              </div>
+              <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img class="is-rounded circular-image" src="../img/testimonials/testimonials-2.jpg" alt="person">
+              </div>
+            </div>
+
+
+          </section>
+        </swiper-slide>
+        <swiper-slide>
+          <section class="has-background-white-ter">
+            <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+              data-aos-duration="1500"> TESTIMONIALS</p>
+            <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500">
+              WHAT ARE THEY <span class="has-text-danger">SAYING ABOUT US</span></h3>
+
+            <div class="grid has-text-centered ml-6 pl-6">
+              <div class="cell is-vcentered bord-left" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <p class="is-italic has-text-black-light is-size-4">
+                  <span class="has-text-danger is-size-3"> “ </span> consectetur adipisicing elit
+                  Nostrum culpa impedit ratione excepturi inventore adipisci obcaecati,
+                  ducimus Voluptatem quae adipisci necessitatibus non aliquid dolor
+                  accusamus <span class="has-text-danger is is-size-3">” </span>
+                </p>
+                <p class="has-text-grey-light is-size-4 fon_shadwos">SAUL GOODMAN</p>
+                <p class="has-text-grey-light is-size-5 fon_shadwos">CEO && FOUNDER</p>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+                <i class="fa-solid fa-star has-text-warning"></i>
+
+              </div>
+              <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img class="is-rounded circular-image" src="../img/testimonials/testimonials-4.jpg" alt="person">
+              </div>
+            </div>
+
+          </section>
+        </swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </section>
+    <!-- end slaider swiber -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- star swiper food -->
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+      slides-per-view="3">
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-1.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-4.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-3.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-4.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-1.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-4.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <figure class="image">
+            <img src="../img/events/event-3.png" alt="food1">
+            <div class="overlay-text">
+              <p class="has-text-black is-size-4">
+                praivait price <br>
+                <span class="has-text-danger bord-price">$250</span> <br>
+                ad vero consequuntur aliquid
+              </p>
+            </div>
+          </figure>
+        </div>
+
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- end star swiper -->
+    <!-- star section chefs -->
+    <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500"> CHEFS</p>
+    <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold ">
+      OUR <span class="has-text-danger" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+        PROFFIESIONAL CHEFS</span></h3>
+
+    <section class="container">
+      <div class="columns is-vcentered has-text-centered" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1510">
+        <div class="column" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+          <div class="image-container">
+            <img class="imag_hover" src="../img/chefs/chefs-1.jpg" alt="chef1" width="300px" height="350px">
+            <div class="dropdown-icons hidden">
+              <span class="icon">
+                <i class="fa-brands fa-youtube has-text-danger"></i>
+                </i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook-messenger has-text-danger"></i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook has-text-danger"></i>
+              </span>
+            </div>
+          </div>
+          <p class="is-size-3">Esam Msuti</p>
+          <p class="is-size-4">master chefs</p>
+          <p class="is-size-6 has-text-grey-light">
+            Eligendi tempora vel tenetur Veritatis quaerat perferendis,
+            <br> earum optio fuga repellendus. Cum, nam asperiores.
+          </p>
+        </div>
+        <div class="column" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+          <div class="image-container">
+            <img class="imag_hover" src="../img/chefs/chefs-3.jpg" alt="chef1" width="300px" height="350px">
+            <div class="dropdown-icons hidden">
+              <span class="icon">
+                <i class="fa-brands fa-youtube has-text-danger"></i>
+                </i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook-messenger has-text-danger"></i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook has-text-danger"></i>
+              </span>
+            </div>
+          </div>
+          <p class="is-size-3">Esam Msuti</p>
+          <p class="is-size-4">master chefs</p>
+          <p class="is-size-6 has-text-grey-light">
+            Eligendi tempora vel tenetur Veritatis quaerat perferendis,
+            <br> earum optio fuga repellendus. Cum, nam asperiores.
+          </p>
+        </div>
+
+        <div class="column" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+          <div class="image-container">
+            <img class="imag_hover" src="../img/chefs/chefs-1.jpg" alt="chef1" width="300px" height="350px">
+            <div class="dropdown-icons hidden">
+              <span class="icon">
+                <i class="fa-brands fa-youtube has-text-danger"></i>
+                </i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook-messenger has-text-danger"></i>
+              </span>
+              <span class="icon">
+                <i class="fa-brands fa-facebook has-text-danger"></i>
+              </span>
+            </div>
+          </div>
+          <p class="is-size-3">Esam Msuti</p>
+          <p class="is-size-4">master chefs</p>
+          <p class="is-size-6 has-text-grey-light">
+            Eligendi tempora vel tenetur Veritatis quaerat perferendis,
+            <br> earum optio fuga repellendus. Cum, nam asperiores.
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- end section chefs -->
+
+    <!-- star section Book your stay with us -->
+
+    <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500"> BOOK ATABLE</p>
+    <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+      data-aos-easing="linear" data-aos-duration="1520">
+      BOOK YOUR<span class="has-text-danger"> STAY WITH US</span></h3>
+    <section>
+
+      <div class="fixed-grid has-text-centered" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+        <div class="grid">
+          <div class="cell" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="../img/reservation.jpg" alt="res" width="300px" height="600px">
+          </div>
+          <div class="cell mr-2 " 
+          data-aos="fade-down" 
+          data-aos-easing="linear" data-aos-duration="1540">
+            <div class="fixed-grid has-3-cols">
+              <div class="grid">
+                <div class="cell">
+                  <input class="input" type="name" placeholder="your name" />
+                </div>
+                <div class="cell">
+                  <input class="input" type="email" placeholder="e.g. alex@example.com" />
+
+                </div>
+                <div class="cell">
+                  <input class="input" type="phone" placeholder="your phone" />
+
+                </div>
+                <div class="cell">
+                  <input class="input" type="date" placeholder="dd/mm/yyyy" />
+
+                </div>
+                <div class="cell">
+                  <input class="input" type="time" placeholder="12:30" />
+
+                </div>
+                <div class="cell">
+                  <input class="input" type="pepole" placeholder="#of people" />
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <br>
+            <input class="input m-2" type="subject" placeholder="subject" />
+            <br>
+            <textarea class="textarea" placeholder="Message"></textarea>
+            <br>
+            <div class="buttons is-centered">
+              <a class="button is-danger  is-rounded has-text-white ">
+                <strong> Message</strong>
+              </a>
+
+            </div>
+
+          </div>
+
+
+    </section>
+
+    <!-- end section Book your stay with us -->
+
+
+    <!-- star section map -->
+    <p class="has-text-centered m-2 p-4 has-text-weight-bold" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500"> contact</p>
+    <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold " data-aos="fade-down"
+      data-aos-easing="linear" data-aos-duration="1500">
+      NEED HELP <span class="has-text-danger"> COUNTACT US</span></h3>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d218360.18791939766!2d29.954886!3d31.224111!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2ssg!4v1733113169314!5m2!1sar!2ssg"
+      width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1530"></iframe>
+    <!-- end section map -->
+    <!-- star section detalies -->
+    <div class="container">
+      <div class="fixed-grid" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1510">
+        <div class="grid has-text-centered">
+
+
+          <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1530">
+            <i class="fa-solid fa-location-dot has-text-danger is-size-3 "></i>
+            <span class="has-text-grey-darker has-text-weight-bold ">Address</span>
+            <p class="has-text-black"> A108 adam streetnew yourk ny7
+              2545
+            </p>
+          </div>
+          <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1545">
+            <i class="fa-solid fa-phone has-text-danger is-size-3 "></i>
+            <span class="has-text-grey-darker has-text-weight-bold">Countact us</span>
+            <p class="has-text-black"> +963 9933222555
+
+            </p>
+          </div>
+          <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1555">
+            <i class="fa-regular fa-envelope has-text-danger is-size-3 "></i>
+            <span class="has-text-grey-darker has-text-weight-bold ">Email</span>
+            <p class="has-text-black"> omaya@gmail.com
+
+            </p>
+          </div>
+          <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1570">
+            <i class="fa-solid fa-clock has-text-danger is-size-3 "></i>
+            <span class="has-text-grey-darker has-text-weight-bold">Oppenning Hours</span>
+            <p class="has-text-black"> Mon-Sat 2024 3 5</p>
+          </div>
+        </div>
+      </div>
+      <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1580">
+        <div class=" columns m-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1590">
+          <input class="input" type="name" placeholder="your name" />
+          <input class="input" type="email" placeholder="e.g. alex@example.com" />
+        </div>
+        <br>
+        <input class="input m-2" type="subject" placeholder="subject" />
+        <br>
+        <textarea class="textarea" placeholder="Message"></textarea>
+        <br>
+        <div class="buttons is-centered" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">
+          <a class="button is-danger  is-rounded has-text-white " data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="1620">
+            <strong> Message</strong>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section detalies -->
+
+
+  <!-- star footer -->
+  <footer class="footer has-background-black pos">
+    <div class="columns border-footer">
+      <div class="column has-text-centered">
+        <i class="fa-solid fa-location-dot has-text-danger is-size-3 "></i>
+        <h4 class="has-text-weight-bold has-text-white">Address</h4>
+        <br>
+
+        <p class="has-text-white"> A108 adam street <br>new yourk ny7
+          2545
+        </p>
+      </div>
+
+      <div class="column has-text-centered">
+        <i class="fa-solid fa-phone has-text-danger is-size-3 "></i>
+        <h4 class="has-text-weight-bold has-text-white">Contact</h4>
+        <br>
+
+        <p class="has-text-white"> A108 adam street <br>new yourk ny7
+          2545
+        </p>
+      </div>
+      <div class="column has-text-centered">
+
+        <i class="fa-regular fa-clock has-text-danger is-size-3 "></i>
+        <h4 class="has-text-weight-bold has-text-white">oppinng hours</h4>
+        <br>
+
+        <p class="has-text-white"> A108 adam street <br>new yourk ny7
+          2545
+        </p>
+      </div>
+      <div class="column has-text-centered m-1">
+        <h4 class="has-text-weight-bold has-text-white mt-5">Follow us</h4>
+        <br>
+        <i class="fa-brands fa-facebook has-text-danger"></i>
+        <i class="fa-brands fa-facebook-messenger has-text-danger"></i>
+        <i class="fa-brands fa-youtube has-text-danger"></i>
+        <i class="fa-brands fa-instagram has-text-danger"></i>
+        <i class="fa-brands fa-linkedin has-text-danger"></i>
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <p class="is-size-5 has-text-white has-text-centered"> @copyright yummy all rights reserved </p>
+    <a id="scrollToTopBtn" class="align-items-end p-3" href="#top">
+      <i class=" fas fa-arrow-up fs-1 has-text-danger is-size-2 arrow"></i></a>
+
+  </footer>
+  <!-- end footer -->
+
+
+  <!-- Add AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+
+  <!-- Add CountUp.js JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
