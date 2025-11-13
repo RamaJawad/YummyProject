@@ -356,96 +356,100 @@
     </div>
   </section>  -->
 
-  <section>
-    <div class="image-container">
-      <img src="img/stats-bg.jpg" alt="count_" class="image" >
-      
-  
-      <div class="overlay">
-        <div class="level">
-          <div class="level-item has-text-centered">
-            <div data-countup>
-              <p class="heading" id="client">39</p>
-              <span class=" count-name title overlay has-text-black">client</span>
-            
-            </div>
+ <section>
+  <div class="image-container">
+    <!-- خلفية الصورة -->
+    <img src="img/stats-bg.jpg" alt="count_" class="image" style="width: 100%; height: auto;">
+    
+    <!-- إضافة الطبقة المظلمة لتسليط الضوء على الأرقام -->
+    <div class="overlay">
+      <div class="level">
+        <!-- الرقم الأول (client) -->
+        <div class="level-item has-text-centered" style="margin-right: 30px;">
+          <div data-countup>
+            <p class="heading" id="client" style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+              39
+            </p>
+            <span class="count-name title overlay has-text-black" style="font-weight: bold; color: white;">
+              client
+            </span>
           </div>
-         
+        </div>
 
-          <div class="level-item has-text-centered">
-
-            <div data-countup>
-              <p class="heading" id="project">80</p>
-              
-            </div> 
-
-          
+        <!-- الرقم الثاني (project) -->
+        <div class="level-item has-text-centered" style="margin-right: 30px;">
+          <div data-countup>
+            <p class="heading" id="project" style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+              80
+            </p>
           </div>
-          <!-- <div class="has-text-centered">
-            <br>
-            <br>
-          <p class="title" >Project</p>
-        </div> -->
-          <div class="level-item has-text-centered">
-            <div data-countup>
-              <p class="heading" id="support">24</p>
-              <p class="title ">Hours Of support</p>
-            </div>
+        </div>
+
+        <!-- الرقم الثالث (support) -->
+        <div class="level-item has-text-centered" style="margin-right: 30px;">
+          <div data-countup>
+            <p class="heading" id="support" style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+              24
+            </p>
+            <p class="title" style="color: white;">Hours Of support</p>
           </div>
-          <div class="level-item has-text-centered">
-            <div data-countup>
-              <p class="heading is-2" id="worker" data-countup>8</p>
-              <p class="has-text-grey-light">Worker</p>
-            </div>
+        </div>
+
+        <!-- الرقم الرابع (worker) -->
+        <div class="level-item has-text-centered">
+          <div data-countup>
+            <p class="heading is-2" id="worker" style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+              8
+            </p>
+            <p class="has-text-grey-light" style="color: white;">Worker</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-      <script>
-        function countup(el, target) {
-          let data = { count: 0 };
-          anime({
-            targets: data,
-            count: [0, target],
-            duration: 6000,
-            round: 1,
-            delay: 200,
-            easing: 'easeOutCubic',
-            update() {
-              el.innerText = data.count.toLocaleString();
+    <!-- إضافة سكربت العداد -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      function countup(el, target) {
+        let data = { count: 0 };
+        anime({
+          targets: data,
+          count: [0, target],
+          duration: 6000,
+          round: 1,
+          delay: 200,
+          easing: 'easeOutCubic',
+          update() {
+            el.innerText = data.count.toLocaleString();
+          }
+        });
+      }
+
+      function makeCountup(el) {
+        const text = el.textContent;
+        const target = parseInt(text, 10);
+
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+              countup(el, target);
+              io.unobserve(entry.target);
             }
           });
-        }
+        });
 
-        function makeCountup(el) {
-          const text = el.textContent;
-          const target = parseInt(text, 10);
+        io.observe(el);
+      }
 
-          const io = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.intersectionRatio > 0) {
-                countup(el, target);
-                io.unobserve(entry.target);
-              }
-            });
-          });
-
-          io.observe(el);
-        }
-
-        const els = document.querySelectorAll('[data-countup]');
-
-        els.forEach(makeCountup);
-      </script>
-
-
-    </div>
-  </section>
-
+      const els = document.querySelectorAll('[data-countup]');
+      els.forEach(makeCountup);
+    </script>
+  </div>
+</section>
 
 
   <!-- end section count -->
+  
   <!-- star section yummy menu -->
   <p class="has-text-centered m-2 p-4 has-text-weight-bold"> our menu</p>
   <h3 class="has-text-centered is-size-1 m-2 p-2 fon_shadwos has-text-weight-bold ">CHECK OUR <span
@@ -1092,4 +1096,5 @@
 </body>
 
 </html>
+
 
